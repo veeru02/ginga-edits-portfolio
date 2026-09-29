@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ginga Edits — Video Editor &amp; Script Writer</title>
+  <meta name="description" content="Ginga Edits — video editor and script writer working on documentary, explainer, business and long-form YouTube video." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container">
+      <a href="index.html" class="logo">Ginga<span>.</span>Edits</a>
+      <nav class="main-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container">
+        <p class="eyebrow">Video Editor &amp; Script Writer</p>
+        <h1>Ginga Edits</h1>
+        <p class="role">Video Editor &amp; Script Writer</p>
+        <p class="desc">
+          I create documentary, explainer, business and long-form YouTube videos
+          with a strong focus on storytelling, pacing and audience retention.
+        </p>
+        <div class="hero-actions">
+          <a href="#work" class="btn btn-primary">View Work</a>
+          <a href="#contact" class="btn btn-secondary">Contact</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about" id="about">
+      <div class="container about-grid">
+        <p class="eyebrow">About</p>
+        <p>
+          I help creators, businesses and brands communicate ideas through
+          clear storytelling and engaging video editing.
+        </p>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section class="skills" id="skills">
+      <div class="container">
+        <h2 class="section-heading">Skills</h2>
+        <ul class="skills-grid">
+          <li>Adobe Premiere Pro</li>
+          <li>After Effects</li>
+          <li>Motion Graphics</li>
+          <li>Color Correction</li>
+          <li>Sound Design</li>
+          <li>Storytelling</li>
+          <li>Script Writing</li>
+          <li>YouTube Editing</li>
+          <li>Documentary Editing</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Selected Work -->
+    <section class="work" id="work">
+      <div class="container">
+        <h2 class="section-heading">Selected Work</h2>
+        <div class="work-list" id="work-list" role="list">
+          <!-- Rendered by js/main.js from js/projects-data.js -->
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer" id="contact">
+    <div class="container footer-grid">
+      <ul class="footer-links">
+        <li><a href="mailto:hello@gingaedits.com">Email</a></li>
+        <li><a href="https://wa.me/00000000000">WhatsApp</a></li>
+        <li><a href="https://linkedin.com">LinkedIn</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="year"></span> Ginga Edits. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>

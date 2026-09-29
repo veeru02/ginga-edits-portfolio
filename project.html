@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Project — Ginga Edits</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <header class="site-header project-header">
+    <div class="container">
+      <a href="index.html" class="back-link">&larr; Back to Home</a>
+      <a href="index.html" class="logo">Ginga<span>.</span>Edits</a>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- Video player -->
+    <div class="video-wrap">
+      <div class="video-frame">
+        <video id="project-video" controls playsinline preload="metadata" hidden>
+          Your browser does not support HTML5 video.
+        </video>
+        <div class="video-fallback" id="video-fallback">
+          <div class="video-fallback-inner">
+            <p class="eyebrow">Video not yet added</p>
+            <p>
+              This project's video file hasn't been placed in the /videos
+              folder yet. Add the MP4 here to make it play:
+            </p>
+            <code id="video-fallback-path"></code>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="project-main">
+
+        <div class="project-top">
+          <div>
+            <h1 class="project-title" id="project-title">&nbsp;</h1>
+            <p class="project-category" id="project-category"></p>
+          </div>
+
+          <dl class="meta-list">
+            <div class="meta-row" id="meta-category">
+              <dt class="meta-label">Category</dt>
+              <dd class="meta-value"></dd>
+            </div>
+            <div class="meta-row" id="meta-year">
+              <dt class="meta-label">Year</dt>
+              <dd class="meta-value"></dd>
+            </div>
+            <div class="meta-row" id="meta-role">
+              <dt class="meta-label">Role</dt>
+              <dd class="meta-value"></dd>
+            </div>
+            <div class="meta-row" id="meta-software">
+              <dt class="meta-label">Software Used</dt>
+              <dd class="meta-value"></dd>
+            </div>
+            <div class="meta-row" id="meta-client">
+              <dt class="meta-label">Client</dt>
+              <dd class="meta-value"></dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="project-description" id="project-description">
+          <div class="desc-block">
+            <p class="eyebrow">Objective</p>
+            <p id="desc-objective"></p>
+          </div>
+          <div class="desc-block">
+            <p class="eyebrow">Editing Approach</p>
+            <p id="desc-approach"></p>
+          </div>
+          <div class="desc-block">
+            <p class="eyebrow">Storytelling Decisions</p>
+            <p id="desc-storytelling"></p>
+          </div>
+          <div class="desc-block">
+            <p class="eyebrow">Retention Techniques</p>
+            <p id="desc-retention"></p>
+          </div>
+          <div class="desc-block">
+            <p class="eyebrow">Final Outcome</p>
+            <p id="desc-outcome"></p>
+          </div>
+        </div>
+
+        <nav class="project-nav" aria-label="Project navigation">
+          <a href="#" class="project-nav-link prev" id="prev-project">
+            <span class="label">&larr; Previous Project</span>
+            <span class="title"></span>
+          </a>
+          <a href="index.html" class="btn btn-secondary">Back to Home</a>
+          <a href="#" class="project-nav-link next" id="next-project">
+            <span class="label">Next Project &rarr;</span>
+            <span class="title"></span>
+          </a>
+        </nav>
+
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <ul class="footer-links">
+        <li><a href="mailto:hello@gingaedits.com">Email</a></li>
+        <li><a href="https://wa.me/00000000000">WhatsApp</a></li>
+        <li><a href="https://linkedin.com">LinkedIn</a></li>
+      </ul>
+      <p class="footer-copy">&copy; <span id="year"></span> Ginga Edits. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script>document.getElementById("year").textContent = new Date().getFullYear();</script>
+  <script type="module" src="js/project.js"></script>
+</body>
+</html>
